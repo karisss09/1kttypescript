@@ -53,9 +53,24 @@ class SuperUser extends User {
     } 
 } 
  
-const user1 = new User('Paul McCartney', 'paul', '1234', 2); 
-const user2 = new User('George Harrison', 'george', '5678', 1); 
+const user1 = new User('Xisin Sadink', 'xisin', '1234', 2); 
+const user2 = new User('Polina Gr', 'polina', '5678', 1); 
 const admin = new SuperUser('Kaes Godoas', 'kaes', '0000', 'admin');
+
+user1.showInfo( );
+admin.showInfo( );
+
+
+
+console.log(`Всего обычн пользователей: ${User.count}`);
+
+console.log(`Всего пользов: ${SuperUser.count}`);
+
+
+console.log(user1.a (user2));
+
+console.log(admin.b ( user3));
+console.log(user1.c (user3));
 
 user3.name = 'Ringo Starr';
 console.log(user3.name);
